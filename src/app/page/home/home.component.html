@@ -1,0 +1,11 @@
+<div class="container">
+    <h2 style="text-align: center;">POST</h2>
+    <nz-input-group nzSearch nzSize="large" [nzAddOnAfter]="suffixButton">
+        <input type="text" [(ngModel)]="text" (keydown.enter)="addPost()" nz-input placeholder="Enter text" />
+      </nz-input-group>
+      <ng-template #suffixButton>
+        <button nz-button nzType="primary" (click)="addPost()" nzSize="large" nzSearch>Add</button>
+      </ng-template>
+
+      <app-list-post [author]="userInfo?.email" [listPost]="listPost"></app-list-post>
+</div>
