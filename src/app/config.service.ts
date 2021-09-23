@@ -12,12 +12,6 @@ export class ConfigService {
     private appService: AppService
   ) { }
 
-  getConfig(){
-    return this.http.get('https://pokeapi.co/api/v2/pokemon/ditto').subscribe(res=>{
-      console.log(res);
-    })
-  }
-
   getUser(id: number){
     // let params = new HttpParams().set('id', id);
     // return this.http.get<any>(config.api+'/auth/detailUser',{params: params}).subscribe(res=>{
