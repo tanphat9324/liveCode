@@ -37,7 +37,7 @@ export class RegisterComponent implements OnInit {
       res=>{
       this.isError = false;
       this.message.create('success', `Register Success!`);
-      this.router.navigate(['../signin'],{relativeTo:this.activeRoute})
+      this.router.navigate(['../login'],{relativeTo:this.activeRoute})
     },(error)=>{
    if(error.status!==200)  
       this.isError = true;

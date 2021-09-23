@@ -12,7 +12,7 @@ const routes: Routes = [
     redirectTo:'register'
   },
   {
-    path:'signin',
+    path:'login',
     canActivate: [CanActiveGuard],
     component: LoginComponent,
   },
